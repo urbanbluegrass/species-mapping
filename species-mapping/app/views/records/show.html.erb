@@ -1,0 +1,16 @@
+<p>
+  <strong>Title:</strong>
+  <%= @record.title %>
+</p>
+ 
+<p>
+  <strong>Text:</strong>
+  <%= @record.text %>
+</p>
+<h2>Notes</h2>
+<%= render @record.notes %>
+
+<h2>Add a note:</h2>
+<%= render "notes/form" %>
+
+<%= link_to 'Back', records_path %> | <%= link_to 'Edit', edit_record_path(@record) %>

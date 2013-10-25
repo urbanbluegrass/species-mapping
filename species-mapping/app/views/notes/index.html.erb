@@ -1,0 +1,16 @@
+<h1>Species Notes List</h1>
+
+<table>
+  <tr>
+
+	<th>Author</th>
+	<th>Note</th>
+  </tr>
+ 
+  <% @notes.each do |note| %>
+    <tr>
+	  <td><%= note.author %></td>
+	  <td><%= note.body %></td>
+    </tr>
+  <% end %>
+</table>
